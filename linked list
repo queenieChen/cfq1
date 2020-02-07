@@ -1,0 +1,23 @@
+Node:
+template < class T >
+class Node{
+public:
+      T data;
+      Node < T > *next;
+      
+      Node() {
+          this -> next = nullptr;
+      }
+      
+      Node( T data){
+          this -> data = data;
+          this -> next = nullptr;
+      }
+};  
+
+linkedList:
+template < class T >
+class LinkedList{
+public:
+    Node <T> *head;
+    
